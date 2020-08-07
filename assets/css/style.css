@@ -126,10 +126,19 @@ header nav ul li a:hover, header h1 a:hover {
 /* Contact Info Section Start */
 .contact-section {
     z-index: 9997;
-    margin: 50px auto;
+    margin: 100px auto;
     line-height: 1.5;
     padding: 0 57px;
     width: 85%;
+    justify-content: center;
+}
+
+.info-area {
+}
+
+.text-areas {
+    display: flex;
+    text-align: 1.5;
 }
 /* Footer Styling Begin */
 footer {
