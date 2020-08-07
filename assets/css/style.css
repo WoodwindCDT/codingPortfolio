@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2a9d8f;
+    --secondary-color: #264653;
+    --third-color: #e6ca84;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--third-color);
+}
+
+.flex-row {
+    display: flex;
+}
+
+/* Header Styling Begin */
+header {
+    background-color: var(--primary-color);
+    z-index: 9999;
+    padding: 10px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header h1 {
+    font-size: 36px;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 8px 0px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 1.6vw;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header p {
+    font-size: 20px;
+}
+/* Header Styling End */
+
+/* Background Image Section */ 
+.picture-area-one {
+    background-image: url("../images/fuji-mountain-in-autumn-822273028-5a6a8a9c3418c600363958d3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.my-name {
+    color: white;
+    font-size: 25px;
+    padding: 10px 25px;
+}
+
+.quote {
+    width: 40%;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 1.5em;
+    position: relative;
+}
+
+/* Footer Styling Begin */
+footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px:
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+/* Footer Styling End */
