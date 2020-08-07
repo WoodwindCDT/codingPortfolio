@@ -60,14 +60,15 @@ header p {
 }
 /* Header Styling End */
 
-/* Background Image Section */ 
+/* Background Image Section Start */ 
 .picture-area-one {
     background-image: url("../images/fuji-mountain-in-autumn-822273028-5a6a8a9c3418c600363958d3.jpg");
     background-size: cover;
     background-position: center;
     height: 300px;
     display: flex;
-    justify-content: center;
+    margin: 0;
+    position: relative;
 }
 
 .my-name {
@@ -77,11 +78,38 @@ header p {
 }
 
 .quote {
-    width: 40%;
-    padding: 20px;
-    font-size: 20px;
-    line-height: 1.5em;
-    position: relative;
+    color: white;
+    font-weight: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 25px 5px 0;
+}
+/* Background Image Section End */
+
+/* About Me Section Start */
+.about-section {
+    margin: 5% auto;
+    padding: 0 20px;
+    line-height: 1.5;
+    width: 85%;
+    font-size: 17px;
+    justify-content: center;
+}
+
+.title {
+    font-size: 36px;
+    float: left;
+    color: var(--secondary-color);
+    margin: 0 15px;
+}
+
+.about-text-section {
+    border-left: 2.5px solid var(--secondary-color);
+}
+
+.about-text-section p {
+    margin: 0 15px;
 }
 
 /* Footer Styling Begin */
