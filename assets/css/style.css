@@ -121,6 +121,44 @@ header nav ul li a:hover, header h1 a:hover {
     padding: 0 53px;
     width: 85%;
 }
+
+.projects-container {
+    align-items: flex-end;
+    position: relative;
+    margin: 0 10px;
+    opacity: 1;
+}
+
+.box-1 {
+    color: white;
+}
+
+.box-1:hover, .box-2:hover {
+    opacity: 0.8;
+}
+
+.image {
+    margin: 0 10px;
+    border-radius: 18px;
+    border: 2px solid var(--secondary-color);
+}
+
+.image-text {
+    background-color: var(--primary-color);
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.text-1 {
+    position: absolute;
+    margin: 25px 12px;
+}
+
+.text-2 {
+    position: absolute;
+    margin: 20px;
+    left: 52.7%;
+}
 /* Projects Section End */
 
 /* Contact Info Section Start */
@@ -133,9 +171,26 @@ header nav ul li a:hover, header h1 a:hover {
     justify-content: center;
 }
 
-.text-areas {
+.contact-section ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.text-areas li a {
+    font-size: 1.3vw;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-bottom: 2px solid white;
+}
+
+.text-areas {
     text-align: 1.5;
+    margin: 15px 30px;
 }
 /* Footer Styling Begin */
 footer {
@@ -146,9 +201,13 @@ footer {
     padding: 40px 35px;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
 footer h2 {
     text-align: center;
     font-size: 32px;
-    color: var(--secondary-color);
 }
 /* Footer Styling End */
