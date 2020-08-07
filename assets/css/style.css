@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.23s;
 }
 
 :root {
@@ -11,6 +13,7 @@
 }
 
 body {
+    z-index: 9999;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--third-color);
 }
@@ -19,22 +22,37 @@ body {
     display: flex;
 }
 
+.text-areas {
+    margin: 0 15px;
+}
+
+.title {
+    font-size: 36px;
+    float: left;
+    color: var(--secondary-color);
+    margin: 0 15px;
+}
+
+.body-section {
+    border-left: 2.5px solid var(--secondary-color);
+}
 /* Header Styling Begin */
 header {
     background-color: var(--primary-color);
-    z-index: 9999;
+    z-index: 9998;
     padding: 10px 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 header h1 {
-    font-size: 36px;
+    font-size: 1.6vw;
     color: var(--secondary-color);
+    margin: 8px 0;
 }
 
 header nav {
-    margin: 8px 0px;
+    margin: 8px 0;
 }
 
 header nav ul {
@@ -47,21 +65,24 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 1.6vw;
+    font-size: 1.3vw;
+    font-weight: bold;
 }
 
 header a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: white;
 }
 
-header p {
-    font-size: 20px;
+header nav ul li a:hover, header h1 a:hover {
+    color: var(--third-color);
+    border-radius: 15px;
 }
 /* Header Styling End */
 
 /* Background Image Section Start */ 
 .picture-area-one {
+    z-index: 9990;
     background-image: url("../images/fuji-mountain-in-autumn-822273028-5a6a8a9c3418c600363958d3.jpg");
     background-size: cover;
     background-position: center;
@@ -71,15 +92,9 @@ header p {
     position: relative;
 }
 
-.my-name {
-    color: white;
-    font-size: 25px;
-    padding: 10px 25px;
-}
-
 .quote {
     color: white;
-    font-weight: 80%;
+    font-weight: 500;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -89,34 +104,40 @@ header p {
 
 /* About Me Section Start */
 .about-section {
-    margin: 5% auto;
+    z-index: 9995;
+    margin: 50px auto;
     padding: 0 20px;
     line-height: 1.5;
     width: 85%;
     font-size: 17px;
-    justify-content: center;
 }
+/* About Me Section End */
 
-.title {
-    font-size: 36px;
-    float: left;
-    color: var(--secondary-color);
-    margin: 0 15px;
+/* Projects Section Start */
+.projects-section {
+    z-index: 9996;
+    margin: 50px auto;
+    line-height: 1.5;
+    padding: 0 53px;
+    width: 85%;
 }
+/* Projects Section End */
 
-.about-text-section {
-    border-left: 2.5px solid var(--secondary-color);
+/* Contact Info Section Start */
+.contact-section {
+    z-index: 9997;
+    margin: 50px auto;
+    line-height: 1.5;
+    padding: 0 57px;
+    width: 85%;
 }
-
-.about-text-section p {
-    margin: 0 15px;
-}
-
 /* Footer Styling Begin */
 footer {
+    z-index: 9992;
+    margin: auto;
     background-color: var(--primary-color);
     width: 100%;
-    padding: 40px 35px:
+    padding: 40px 35px;
 }
 
 footer h2 {
