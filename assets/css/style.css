@@ -211,3 +211,107 @@ footer h2 {
     font-size: 32px;
 }
 /* Footer Styling End */
+
+/* Media Query - Adjustments Start */
+@media screen and (max-width: 980px) {
+    header {
+        position: relative;
+        padding-bottom: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+        font-size: 22px;
+        bottom: 0;
+    }
+
+    .about-section {
+        text-align: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .about-section h4 {
+        float: inline;
+        margin-left: 27px;
+    }
+    
+    .body-section {
+        border: none;
+        display: inline-block;
+    }
+    
+    .projects-section {
+        width: 100%;
+    }
+
+    .projects-section h4 {
+        float: left;
+        left: 10px;
+    }
+
+    .projects-container {
+        display: inline; 
+        margin: 10px;   
+    }
+
+    .text-1 {
+        position: relative;
+        margin: 18px;
+    }
+
+    .text-2 {
+        position: relative;
+        left: 0;
+    }
+
+    .image {
+        flex: 1 40%;
+    }
+
+    .image-text {
+        background-color: var(--third-color);
+        width: fit-content;
+    }
+
+    .contact-section h4 {
+        display: none;
+    }
+
+    .contact-list {
+        position: absolute;
+        width: 100%;
+    }
+
+    .contact-section {
+        margin: 0 auto;
+        float: left;
+        display: flex;
+        width: 100%;
+    }
+
+    .contact-section ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contact-section ul li a {
+        font-size: 1.5vw;
+    }
+}
