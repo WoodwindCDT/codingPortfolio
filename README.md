@@ -36,3 +36,4 @@ Deployed Application Link > https://woodwindcdt.github.io/codingPortfolio/
 - Media Query Additions
 - Consuming White Background with smooth, user/device friendly animation
 - Adding Back To Top Button
+- Better, more Advanced Project Hover Animations
