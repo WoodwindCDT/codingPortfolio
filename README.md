@@ -33,4 +33,6 @@ Deployed Application Link > https://woodwindcdt.github.io/codingPortfolio/
 - https://markdownlivepreview.com/
 
 #### Incoming Additions
-> Pending
+- Media Query Additions
+- Consuming White Background with smooth, user/device friendly animation
+- Adding Back To Top Button
