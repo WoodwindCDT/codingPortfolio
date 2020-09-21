@@ -37,3 +37,4 @@ Deployed Application Link > https://woodwindcdt.github.io/codingPortfolio/
 - Consuming White Background with smooth, user/device friendly animation
 - Adding Back To Top Button
 - Better, more Advanced Project Hover Animations
+- Change Emojis for Mail & Phone to SVG
