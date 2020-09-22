@@ -41,7 +41,7 @@
 
     <!-- SVG Shape && Path -->
     <div class="move-me rellax" data-rellax-speed="-2">
-        <svg class="shape shape1" width="90" height="80" viewBox="0 0 40 40">
+        <svg xmlns="http://www.w3.org/2000/svg" class="shape shape1" width="90" height="80" viewBox="0 0 40 40">
             <path class="path-shape"
             style="opacity: 1; fill-opacity: 1; stroke: none;"
             d="M 7.7423617,6.5524041 C 0.14213171,13.241204 -0.28352929,25.218399 6.5488487,32.446038 13.237649,40.04627 24.578354,40.568996 32.442483,33.639553 39.813699,26.434583 40.216105,14.96193 33.635997,7.7459191 26.935569,0.39795815 15.101951,-0.40029585 7.7423617,6.5524041 Z" />
@@ -56,11 +56,16 @@
             <div id="proj-1" class="Project proj-item-L">
                <a href="https://team-incredibles.github.io/Group-Project/">
                     <img class="imgC" src="./assets/images/space-dash.PNG">
+                    <!-- Project Overlay -->
                     <div class="img-overlay"></div>
+                    <!-- Project Details Wrap -->
                     <div class="img-details">
+                        <!-- Project Title -->
                         <h3 class="img-title">Space Dash</h3>
                         <hr >
+                        <!-- Project Structure -->
                         <p class="img-desc">HTML/CSS/JS</p>
+                        <!-- Project Description -->
                         <p class="img-desc">My contribution to this project mainly
                             consisted of custom CSS Styling/Animation, HTML WireFraming,
                             API Sourcing/Configuration, and ReadMe.
@@ -101,29 +106,46 @@
         </div>
     </div>
 
+    <!-- Back To the Top Button -->
+    <div class="blob">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="up-arw" width="40" height="40" viewBox="0 0 24 24">
+            <path fill="#0a0908" d="M12 3l12 18h-24z"/>
+            </svg>
+        </a>
+    </div>
+
+
     <!-- Contact Section -->
     <div id="contact" class="section-wrapper">
         <div class="shake-little"><h1 class="section-head hd-3">In Touch</h1></div>
         <div class="cntc-container">
+            <!-- Reach Out Icons -->
             <div class="cntc-area">
+                <!-- Reach Out Email -->
                 <div class="shake-rotate">
                     <a href="mailto:woodwind.turbeville@gmail.com"><i class="txt-a-e far fa-envelope"></i></a>
                 </div>
+                <!-- Reach Out Phone -->
                 <div class="shake-little">
                     <a href="tel:936-240-4206"><i class="fas fa-phone-alt txt-a-e"></i></a>
                 </div>
+                <!-- Reach Out GitHub -->
                     <a href="https://github.com/WoodwindCDT">
                         <i class="fab fa-2x fa-github txt-a-i"></i>
                     </a>
+                    <!-- Reach Out LinkedIn -->
                     <a href="https://www.linkedin.com/in/cristian-turbeville-542965164/">
                         <i class="fab fa-2x fa-linkedin txt-a-i"></i>
                     </a>
+                    <!-- Reach Out Residing Location -->
                 <div class="cntc-t-div">
                     <p class="cntc-t">
                         <i class="fas fa-map-pin"></i> Lufkin, Texas
                     </p>
                 </div>
             </div>
+            <!-- Flex-Box Image of Me -->
             <div class="cntc-area-S">
                 <img class="imgC" src="./assets/images/img-me.jpg">
             </div>

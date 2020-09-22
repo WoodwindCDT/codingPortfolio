@@ -9,6 +9,16 @@ var rellax = new Rellax('.rellax');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letters'>$&</span>");
 footerTxtWrap.innerHTML = footerTxtWrap.textContent.replace(/\S/g, "<span class='f-ltrs'>$&</span>");
 
+// Button Animation - Fade In
+$(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 500) {
+        $('.up-arw').fadeIn();
+    } else {
+        $('.up-arw').fadeOut();
+    }
+});
+
 // Main Body / Header Animation
 var tl = anime.timeline()
 .add ({
@@ -138,14 +148,4 @@ var tl2 = anime.timeline({loop: true})
     translateZ: 0,
     duration: 1000,
     delay: anime.stagger(200, {direction: 'reverse'})
-});
-
-// Footer Button Animation - Fade In
-$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 3000) {
-        $('').fadeIn();
-    } else {
-        $('').fadeOut();
-    }
 });

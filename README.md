@@ -32,8 +32,4 @@ Deployed Application Link > https://woodwindcdt.github.io/codingPortfolio/
 > Read Me
 - https://markdownlivepreview.com/
 
-#### Incoming Additions
-- Media Query Additions
-- Consuming White Background with smooth, user/device friendly animation
-- Adding Back To Top Button
-- Better, more Advanced Project Hover Animations
+> Enjoy :)

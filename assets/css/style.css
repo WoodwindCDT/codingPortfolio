@@ -15,6 +15,7 @@ body {
     z-index: 9999;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: calc(16px + .4vw);
+    background-color: rgba(245, 222, 179, 0.541);
 }
 
 hr {
@@ -34,6 +35,11 @@ hr {
 .shape1 {
     animation: rotate 1500ms infinite;
 }
+
+@keyframes upS {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-10px); }
+}
  
 @keyframes rotate {
     0% { transform: rotate(0deg); }
@@ -51,6 +57,14 @@ hr {
     40% { transform: scale(1); }
     60% { transform: scale(1.1); }
     100% { transform: scale(1); }
+}
+
+@keyframes easyShake {
+    0% { transform: rotate(0deg); }
+   30% { transform: rotate(0deg); }
+   55% { transform: rotate(6deg); }
+   95% { transform: rotate(-6deg); }
+  100% { transform: rotate(0deg); }
 }
 
 /* Header & Nav Section */
@@ -130,6 +144,8 @@ hr {
     padding: 5%;
     border-radius: 5px;
     border-width: 1px;
+    max-height: 770px;
+    overflow: auto;
     background-color: hsl(205, 52%, 81%);
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 
     0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
@@ -158,7 +174,7 @@ hr {
     max-width: 100%;
     border-radius: 5px;
     border-width: 1px;
-    background-color: hsl(0, 87%, 85%);
+    background-color: hsl(0, 80%, 80%);
     overflow: hidden;
     display: flex;
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 
@@ -261,6 +277,27 @@ hr {
     position: relative;
     text-align: center;
 
+}
+
+/* To The Top Button */
+.blob {
+    position: fixed;
+    bottom: 2%;
+    right: 0;
+    display: inline-flex;
+    margin-right: 2%;
+    outline: none;
+    transition: all 1s ease-in-out;
+}
+
+.up-arw {
+    animation: upS 2s infinite alternate;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+}
+
+.up-arw path:hover {
+    fill: rgb(155, 118, 202);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 1));
 }
 
 /* Contact Section */
