@@ -253,6 +253,10 @@ hr {
     transition: all 0.2s ease-in;
 }
 
+.imgC:hover {
+    transform: scale(1.5);
+}
+
 .img-title {
     position: relative;
     text-align: center;
