@@ -341,6 +341,10 @@ hr {
     display: flex;
 }
 
+.hd-3 {
+    margin-top: 5%;
+}
+
 .txt-a-e {
     font-size: calc(16px + 1vw);
     
@@ -397,3 +401,5 @@ hr {
 .fa-heart {
     animation: heart 3s infinite;
 }
+
+/* Media Query Start */
