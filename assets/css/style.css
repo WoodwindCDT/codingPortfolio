@@ -128,7 +128,7 @@ hr {
 
 /* About Body Section */ 
 .section-wrapper {
-    margin: 2% 22%;
+    margin: 2% 20%;
     opacity: 0;
 }
 
@@ -255,9 +255,7 @@ hr {
 .imgC {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 
-    0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
-    color: hsl(200, 5%, 13%);
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
     transition: all 0.2s ease-in;
 }
 
@@ -294,7 +292,6 @@ hr {
 
 /* Contact Section */
 .cntc-container {
-    color: white;
     max-width: 100%;
     border-radius: 5px;
     border-width: 1px;
@@ -334,7 +331,7 @@ hr {
 }
 
 .hd-3 {
-    margin-top: 5%;
+    margin-top: 12%;
 }
 
 .txt-a-e {
@@ -360,9 +357,6 @@ hr {
 }
 
 .cntc-area a, .cntc-area p, .cntc-area-S p {
-    text-shadow: 0 5px 2px rgba(0,0,0,0.09), 0 2px 4px rgba(0,0,0,0.09), 0 4px 8px rgba(0,0,0,0.09), 
-    0 8px 16px rgba(0,0,0,0.09),0 16px 32px rgba(0,0,0,0.09), 0 32px 64px rgba(0,0,0,0.09);
-    color: hsl(200, 5%, 13%);
     text-decoration: none;
     outline: none;
     color: black;
@@ -395,3 +389,42 @@ hr {
 }
 
 /* Media Query Start */
+@media screen and (max-width: 1356px) {
+    body {
+        font-size: calc(16px + .3vw);
+    }
+
+    .text-wrapper {
+        font-size: calc(20px + 1.2vw);
+    }
+
+    .nav-bar {
+        padding: calc(20px + .2vw);
+    }
+
+    .section-wrapper {
+        margin: 2% 10%;
+    }
+
+    .text-container {
+        max-height: 600px;
+    }
+
+    .section-head {
+        font-size: calc(20px + 2.2vw);
+    }
+
+    .proj-item-L, .proj-item {
+        flex: 1 100%;
+        padding: 10px;
+    }
+
+    .Project .img-overlay {
+        background: rgba(12, 12, 12, 0.68);
+        opacity: 1;
+    }
+
+    .img-details {
+        opacity: 1;
+    }
+} 
