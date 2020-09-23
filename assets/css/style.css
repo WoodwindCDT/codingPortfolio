@@ -275,7 +275,7 @@ hr {
     bottom: 2%;
     right: 0;
     display: inline-flex;
-    margin-right: 5px;
+    margin-right: 2%;
     outline: none;
     transition: all 1s ease-in-out;
 }
