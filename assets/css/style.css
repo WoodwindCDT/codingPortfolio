@@ -275,7 +275,7 @@ hr {
     bottom: 2%;
     right: 0;
     display: inline-flex;
-    margin-right: 2%;
+    margin-right: 5px;
     outline: none;
     transition: all 1s ease-in-out;
 }
@@ -426,5 +426,9 @@ hr {
 
     .img-details {
         opacity: 1;
+    }
+
+    .blob {
+        margin-right: 0;
     }
 } 
