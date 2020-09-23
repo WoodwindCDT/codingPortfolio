@@ -50,8 +50,9 @@ anime.timeline()
     targets: '.section-wrapper',
     rotateZ: [40, 0],
     translateZ: 0,
+    duration: 1000,
     opacity: 1,
-}, 800);
+}, 1200);
 
 // Header Section Animation
 anime.timeline()
