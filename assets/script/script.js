@@ -5,7 +5,7 @@ var footerTxtWrap = document.querySelector('.foot-txt .f-ltrs')
 // Parralax Scrolling Animation
 var rellax = new Rellax('.rellax');
 
-// Header & Footer Animation
+// Header & Footer AnimationA
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letters'>$&</span>");
 footerTxtWrap.innerHTML = footerTxtWrap.textContent.replace(/\S/g, "<span class='f-ltrs'>$&</span>");
 
