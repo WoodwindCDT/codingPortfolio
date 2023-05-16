@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('http://localhost:5000/data');
+        const response = await fetch('https://woodwindcdt.github.io/codingPortfolio/data');
         if (!response.ok) {
           throw new Error('Network response error');
         }
