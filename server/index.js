@@ -9,14 +9,14 @@ app.use(express.json());
 app.use(require("./routes/routes"));
 // get driver connection
 const dbo = require("./db/connection");
- 
+
 dbo();
 
 mongoose.connection.once('open', () => {
     console.log('Connected to MongoDB')
     app.listen(port, () => console.log(`Server running on port ${port}`))
-})
+});
 
 mongoose.connection.on('error', err => {
     console.log(err)
-})
+});
