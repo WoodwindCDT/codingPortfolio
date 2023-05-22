@@ -1,3 +1,3 @@
-# Welcome to my Coding Portfolio!
+# This Repository is dedicated to my portfolio's source code!
 
-> Deployed Site: https://woodwindcdt.github.io/codingPortfolio/
+> Deployed Site: https://cristian-develops.xyz
